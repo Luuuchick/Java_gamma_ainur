@@ -5,7 +5,9 @@ public class MyFirstProgram {
     public static void main(String[] args) {
        Point p1 = new Point(0,0);
         Point p2 = new Point(3,4);
+        Point p3 =  new Point(0,0,3,4);
         System.out.println(distance(p1,p2));
+        System.out.println(p3.distance(p2));
     }
     public static double distance(Point p1,Point p2){
         double dx = p2.x - p1.x;
