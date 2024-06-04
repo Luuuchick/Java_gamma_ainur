@@ -28,7 +28,7 @@ public class ContactData {
         return lastName;
     }
 
-    public void getLastName(String lastname) {
+    public void setLastName(String lastname) {
         this.lastName = lastname;
     }
 
@@ -42,6 +42,10 @@ public class ContactData {
     public String getGroup() {
         return group;
     }
+    public void setGroup(String group) {
+        this.group = group;
+    }
+
     @Override
     public String toString() {
         return "ContactData{" +
