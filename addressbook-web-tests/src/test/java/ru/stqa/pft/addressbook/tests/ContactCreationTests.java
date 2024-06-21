@@ -2,12 +2,7 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.Test;
 
-import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ContactData;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
-import ru.stqa.pft.addressbook.model.GroupData;
 
 
 public class ContactCreationTests extends TestBase{
@@ -25,7 +20,7 @@ public class ContactCreationTests extends TestBase{
 
     @Test
     public void testContactCreation() {
-        app.getNavigationHelper().gotoContactPage();
+        app.goTo().gotoContactPage();
         app.getContactHelper().createContact(new ContactData("test1", "gdhg","25522","kkkkl"));
 
     }
