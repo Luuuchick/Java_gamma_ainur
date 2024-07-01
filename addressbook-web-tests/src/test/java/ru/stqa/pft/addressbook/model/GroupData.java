@@ -11,11 +11,9 @@ public class GroupData {
     private  String footer;
 
 
-
     public String getName() {
         return name;
     }
-
 
     public int getId() {
         return id;
@@ -61,11 +59,11 @@ public class GroupData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         GroupData groupData = (GroupData) o;
-        return Objects.equals(getName(), groupData.getName());
+        return getId() == groupData.getId() && Objects.equals(getName(), groupData.getName());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(getName());
+        return Objects.hash(getId(), getName());
     }
 }
